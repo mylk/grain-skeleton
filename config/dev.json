@@ -1,0 +1,11 @@
+{
+    "projectUrl": "http://grain-skeleton.dev",
+    "mysql": {
+        "mydb": {
+            "hostname": "localhost",
+            "database": "grain",
+            "username": "grain",
+            "password": "grain"
+        }
+    }
+}

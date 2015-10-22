@@ -1,0 +1,18 @@
+{
+    "require": {
+        "mylk/grain": "dev-master"
+    },
+    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mylk/grain.git"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "GrainSkeleton\\": "src/GrainSkeleton/"
+        }
+    }
+}
