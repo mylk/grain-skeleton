@@ -8,6 +8,15 @@ class HelloController extends Controller
 {
     public function indexAction($request)
     {
+        $container = $this->getContainer();
+        
+        try {
+            $helloService = $container->HelloService;
+            $helloService->helloFromService();
+        } catch (\Exception $ex) {
+            die($ex->getMessage());
+        }
+        
         $this->render("hello.php", array("name" => $request["name"]));
     }
     

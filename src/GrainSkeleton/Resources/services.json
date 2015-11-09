@@ -1,0 +1,10 @@
+{
+    "HelloService": {
+        "class": "GrainSkeleton\\Service\\HelloService",
+        "dependencies": ["HelloDependencyService"]
+    },
+    "HelloDependencyService": {
+        "class": "GrainSkeleton\\Service\\HelloDependencyService",
+        "dependencies": []
+    }
+}
