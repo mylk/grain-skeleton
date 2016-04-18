@@ -9,10 +9,13 @@ class HelloController extends Controller
     public function indexAction($request)
     {
         $container = $this->getContainer();
+        $eventDispatcher = $this->getEventDispatcher();
         
         try {
             $helloService = $container->HelloService;
             $helloService->helloFromService();
+            
+            $eventDispatcher->dispatch("custom_event");
         } catch (\Exception $ex) {
             die($ex->getMessage());
         }

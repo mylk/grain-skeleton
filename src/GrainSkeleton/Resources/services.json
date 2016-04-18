@@ -6,5 +6,15 @@
     "HelloDependencyService": {
         "class": "GrainSkeleton\\Service\\HelloDependencyService",
         "dependencies": []
+    },
+    "HelloPostRequestListener": {
+        "class": "GrainSkeleton\\EventListener\\HelloEventListener",
+        "events": ["core.post_request", "core.pre_response"],
+        "public": false
+    },
+    "CustomEventListener": {
+        "class": "GrainSkeleton\\EventListener\\CustomEventListener",
+        "events": ["custom_event"],
+        "public": false
     }
 }
