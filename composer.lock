@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c281bf91b8d531891c63b09c619965f0",
-    "content-hash": "a76f8c80f01abb75b6d20c344d3dae26",
+    "hash": "6bffbf63a28725e9bd97d38bf87bbbaf",
     "packages": [
         {
             "name": "mylk/grain",
@@ -13,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mylk/grain.git",
-                "reference": "0ec7e4eeaeda79b84bda077b438706efcc831255"
+                "reference": "7f07ba819a4700f60085366b059e22338e114252"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mylk/grain/zipball/0ec7e4eeaeda79b84bda077b438706efcc831255",
-                "reference": "0ec7e4eeaeda79b84bda077b438706efcc831255",
+                "url": "https://api.github.com/repos/mylk/grain/zipball/7f07ba819a4700f60085366b059e22338e114252",
+                "reference": "7f07ba819a4700f60085366b059e22338e114252",
                 "shasum": ""
             },
             "require": {
@@ -52,13 +51,15 @@
                 "issues": "https://github.com/mylk/grain/issues",
                 "source": "https://github.com/mylk/grain/tree/master"
             },
-            "time": "2015-08-30 16:02:11"
+            "time": "2016-04-24 12:33:44"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "mylk/grain": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
