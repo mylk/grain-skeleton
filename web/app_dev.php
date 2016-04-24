@@ -1,11 +1,11 @@
 <?php
 
-require "../vendor/autoload.php";
+require __DIR__ . "/../vendor/autoload.php";
 
 use Grain\Core;
 
-$config = \json_decode(\file_get_contents("../config/dev.json"), true);
-$servicesDefinition = \json_decode(\file_get_contents("../src/GrainSkeleton/Resources/services.json"), true);
+$config = \json_decode(\file_get_contents(__DIR__ . "/../config/dev.json"), true);
+$servicesDefinition = \json_decode(\file_get_contents(__DIR__ . "/../src/GrainSkeleton/Resources/services.json"), true);
 
 $core = new Core($config);
 $core->initializeContainer($servicesDefinition)
