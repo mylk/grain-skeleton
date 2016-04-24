@@ -41,4 +41,9 @@ To see the skeleton application in action, start the PHP built-in web server:
 
     $ php -S localhost:8080 -t web/ web/app_dev.php
 
-Then, browse to http://localhost:8080/
+Then, browse to http://localhost:8080/hello/yourname
+
+Alternatively, if you have docker and docker-compose installed, you can run the application in a container:
+
+    $ docker-compose build
+    $ docker-compose up
