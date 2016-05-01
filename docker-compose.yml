@@ -3,5 +3,22 @@ web:
   command: php -S 0.0.0.0:8080 -t /grain-skeleton/web/ /grain-skeleton/web/app_dev.php
   ports:
     - "8080:8080"
+  links:
+    - db
   volumes:
     - .:/grain-skeleton
+  environment:
+    DB_HOST: grain
+    DB_NAME: grain
+    DB_USER: grain
+
+db:
+  hostname: db
+  image: mysql
+  environment:
+    MYSQL_DATABASE: grain
+    MYSQL_ROOT_PASSWORD: "password"
+    MYSQL_USER: grain
+    MYSQL_PASSWORD: grain
+  volumes:
+    - ./_db:/docker-entrypoint-initdb.d
