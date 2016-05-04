@@ -15,5 +15,9 @@ $core->map("/hello/{name}", "GET", "GrainSkeleton:Hello:index", "sayHello")
     ->map("/hello/{name}", "POST", "GrainSkeleton:Hello:new", "postHello")
     ->map("/persons/{firstName}", "GET", "GrainSkeleton:Hello:showPersons", "getPersons");
 
-$response = $core->handle(\filter_input(INPUT_SERVER, "REQUEST_URI"), \filter_input(INPUT_SERVER, "REQUEST_METHOD"));
+$response = $core->handle(
+    \filter_input(INPUT_SERVER, "REQUEST_URI"),
+    \filter_input(INPUT_SERVER, "REQUEST_METHOD"),
+    \filter_input(INPUT_SERVER, "CONTENT_TYPE")
+);
 echo $response;
