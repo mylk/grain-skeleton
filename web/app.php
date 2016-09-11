@@ -11,7 +11,7 @@ $core = new Core($config);
 $core->initializeContainer($servicesDefinition)
     ->initializeEventDispatcher($servicesDefinition);
 
-$core->map("/hello/{name}", "GET", "GrainSkeleton:Hello:index", "sayHello")
+$core->map("/hello/{name}", array("GET"), "GrainSkeleton:Hello:index", "sayHello")
     ->map("/persons/{firstName}", "GET", "GrainSkeleton:Hello:showPersons", "getPersons");
 
 $response = $core->handle(
