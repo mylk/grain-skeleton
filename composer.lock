@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mylk/grain.git",
-                "reference": "2ccba4d4d9c8292c551c5ef7074c1715a94c0abf"
+                "reference": "ac9db858d1b2ed3a5b7aa62e75011fd852de873a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mylk/grain/zipball/2ccba4d4d9c8292c551c5ef7074c1715a94c0abf",
-                "reference": "2ccba4d4d9c8292c551c5ef7074c1715a94c0abf",
+                "url": "https://api.github.com/repos/mylk/grain/zipball/ac9db858d1b2ed3a5b7aa62e75011fd852de873a",
+                "reference": "ac9db858d1b2ed3a5b7aa62e75011fd852de873a",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "issues": "https://github.com/mylk/grain/issues",
                 "source": "https://github.com/mylk/grain/tree/master"
             },
-            "time": "2016-05-08 21:17:51"
+            "time": "2016-09-11 13:33:33"
         }
     ],
     "packages-dev": [],
