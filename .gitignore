@@ -1,2 +1,7 @@
-vendor/
+# IDEs
 nbproject/
+.buildpath
+.project
+.settings/
+
+vendor/
